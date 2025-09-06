@@ -1,0 +1,59 @@
+/* Fondo con imagen + overlay oscuro */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  /* Imagen de fondo */
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* Capa oscura */
+    url('img 1.jpg') no-repeat center center fixed; /* Tu imagen */
+  background-size: cover;
+
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Contenedor central */
+.container {
+  background: rgba(17, 17, 17, 0.8); /* Caja semi-transparente */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3);
+  max-width: 700px;
+  width: 90%;
+  border: 2px solid #ff0000;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Subtítulos */
+h2 {
+  color: #0084ff;
+  border-bottom: 2px solid #ff0000;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+/* Texto */
+#output {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* Efecto hover */
+h2:hover {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
